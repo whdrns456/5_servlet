@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>피자주문페이지</title>
+</head>
+<body>
+  <form action="/2_jsp/pizza.do" method="get">
+        <div>
+        <label for="userName">이름 : </label>
+        <input type="text" id="userName" name="userName">
+        </div>
+
+		<label for="phone">전화번호 : </label>
+        <input type="text" id="phone" name="phone">
+        </div>
+
+
+        <div>
+  			<label for="address">주소 : </label>
+        	<input type="text" id="address" name="address">
+  
+        </div>
+		
+		<div>
+            <label for="main_menu">주소:</label>
+            <select name="main_menu" id="main_menu">
+                <option value="초코민트피자">초코민트피자</option>
+                <option value="게토레이피자">게토레이피자</option>
+                <option value="게맛살피자">게맛살피자</option>
+                <option value="천하장사소시지피자">천하장사소시지피자</option>
+            </select>
+        </div>
+        
+   
+
+
+        <div>
+            사이드 메뉴 :
+            <input type="checkbox" name="side_menu" value="우유"> 흰우유
+            <input type="checkbox" name="side_menu" value="포도우유"> 포도우유
+            <input type="checkbox" name="side_menu" value="바나나우유"> 바나나우유
+        </div>
+
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+
+    </form>
+	
+	
+</body>
+</html>
